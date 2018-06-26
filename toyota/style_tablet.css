@@ -1,0 +1,57 @@
+#ad
+	{
+	width:500px;
+	height:250px;
+	background-image:url("./img/bg_tablet.png");
+	}
+
+#logo
+		{
+		width:45px;
+		}
+ 
+	
+h1
+	{
+	font-size: 50px;
+    line-height: 50px;
+    top: 65px;
+    left: 30px;
+	}
+	
+#cta
+	{
+	top:190px;
+	left:30px;
+	padding:10px 25px 11px 25px;
+	}
+
+#twitter_flag, #maps_flag
+	{
+	top:200px;
+	}
+	
+#twitter_flag
+	{
+    left: 260px;
+	}
+#maps_flag
+	{
+    left: 365px;
+	}
+.flag
+	{
+		font-size:11px;
+	}
+.flag img
+	{
+	height:20px;
+	width:auto;
+	}
+
+	
+	
+	.info_window
+		{
+		width:400px;
+		}

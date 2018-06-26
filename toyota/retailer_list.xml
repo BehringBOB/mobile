@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <name>M.C.F. Motor Company Fahrzeugvertriebsgesellschaft mbH</name>
+    <str>Stralauer Allee 44-47</str>
+    <plz>10245 BERLIN</plz>
+    <lat>52.5027</lat>
+    <lng>13.4483</lng>
+    <tel>030-4988084200</tel>
+    <url>http://www.toyota-mcf-berlin-mitte.de</url>
+  </row>
+  <row>
+    <name>M.C.F. Motor Company Fahrzeugvertriebsgesellschaft mbH</name>
+    <str>Gehringstraße 23-25</str>
+    <plz>13088 Berlin</plz>
+    <lat>52.562172</lat>
+    <lng>13.465383</lng>
+    <tel>030-4988084000</tel>
+    <url>http://www.toyota-mcf-berlin-weissensee.de/</url>
+  </row>
+  <row>
+    <name>M.C.F. Motor Company Fahrzeugvertriebsgesellschaft mbH</name>
+    <str>Ollenhauerstraße 9-13</str>
+    <plz>13403 Berlin</plz>
+    <lat>52.5654</lat>
+    <lng>13.32885</lng>
+    <tel>030-4988080</tel>
+    <url>http://www.toyota-mcf-berlin-ollenhauerstr.de/</url>
+  </row>
+  <row>
+    <name>M.C.F. Motor Company Fahrzeugvertriebsgesellschaft mbH</name>
+    <str>Allee der Kosmonauten 27</str>
+    <plz>12681 Berlin</plz>
+    <lat>52.526661</lat>
+    <lng>13.521658</lng>
+    <tel>030-4988082000</tel>
+    <url>http://www.toyota-mcf-berlin-allee.de/</url>
+  </row>
+  <row>
+    <name>M.C.F. Motor Company Fahrzeugvertriebsgesellschaft mbH</name>
+    <str>Buschkrugallee 109</str>
+    <plz>12359 Berlin</plz>
+    <lat>52.454315</lat>
+    <lng>13.451483</lng>
+    <tel>030-4988087300</tel>
+    <url>http://www.toyota-mcf-berlin-buschkrugallee.de/</url>
+  </row>
+  <row>
+    <name>M.C.F. Motor Company Fahrzeugvertriebsgesellschaft mbH</name>
+    <str>Am Juliusturm 50</str>
+    <plz>13599 Berlin</plz>
+    <lat>52.538184</lat>
+    <lng>13.216815</lng>
+    <tel>030-4988086800</tel>
+    <url>http://www.toyota-mcf-berlin-juliusturm.de/</url>
+  </row>
+  <row>
+    <name>M.C.F. Motor Company Fahrzeugvertriebsgesellschaft mbH</name>
+    <str>Osdorfer Straße 129</str>
+    <plz>12207 Berlin</plz>
+    <lat>52.42111</lat>
+    <lng>13.313032</lng>
+    <tel>030-4988086400</tel>
+    <url>http://www.toyota-mcf-berlin-osdorferstr.de/</url>
+  </row>
+  <row>
+    <name>Thomas Riehl Kraftfahrzeug GmbH</name>
+    <str>Wegedornstr. 28</str>
+    <plz>12524 Berlin</plz>
+    <lat>52.42418</lat>
+    <lng>13.52583</lng>
+    <tel>030/67975860</tel>
+    <url>http://www.toyota-riehl-berlin.de/</url>
+  </row>
+</root>
