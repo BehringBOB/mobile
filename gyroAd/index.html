@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=yes">
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            #square
+                {
+                    height: 50px;
+                    width: 50px;
+                    background-color:fuchsia;
+                    position:absolute;
+                    margin-left:auto;
+                    margin-right:auto;
+                    left:0;
+                    right:0;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                    margin: auto;
+                    top: 0; left: 0; bottom: 0; right: 0;
+                }
+        </style>
+	</head>
+
+    <body>
+
+    <div id="wrapper">
+		<div id="myAd">
+            <div id="square"></div>
+            
+            <div id="infos">
+                <span id="X"></span>
+                <span id="Y"></span>
+                <span id="Z"></span>
+            </div>
+            
+		</div>
+    </div>
+
+        
+    <script>
+    neigung = 0;
+    if (window.DeviceMotionEvent)
+        {
+          console.log('Supported!');
+         // console.log(width);
+
+        function handleMotionEvent(event) 
+            {
+
+          // android und iOS device motion werte gleichsetzen, sonst entgegengesetzte werte
+            if (navigator.appVersion.indexOf('Android') != -1)
+                {
+                x = (Math.round(event.accelerationIncludingGravity.x));
+                y = (Math.round(event.accelerationIncludingGravity.y));
+                var z = (Math.round(event.accelerationIncludingGravity.z));
+             //   document.getElementById('device').innerHTML = 'android';
+                }	
+            else if (navigator.appVersion.indexOf('iPhone') != -1)
+                {
+                x = ((Math.round(event.accelerationIncludingGravity.x))* -1);
+                y = ((Math.round(event.accelerationIncludingGravity.y))* -1);
+                var z = ((Math.round(event.accelerationIncludingGravity.z))* -1);
+            //    document.getElementById('device').innerHTML = 'iOS';
+                }
+            else 
+                {
+                console.log('Dit is doch kein Smartphone, alter (oder irgend so ein komisches Windows Phone). \n \nGeh mal mit deinem Smartphone auf... \n \n'+window.location.href )
+                }
+
+            //check ob nach rechts oder links geneigt
+            if (x > 0)
+                {	neigung = 'link';
+                    document.getElementById('square').style.right = '-50px';
+                    document.getElementById('square').style.left = '0px';
+                } //links
+            else if (x < 0)
+                {	neigung = 'rechts';	
+                    document.getElementById('square').style.right = '0px';
+                    document.getElementById('square').style.left = '-50px';
+                } // recht
+            else
+                {	neigung = 'gerade';	} // gerade
+
+            console.log(neigung);
+
+
+      document.getElementById('X').innerHTML = 'X: '+x;
+      document.getElementById('Y').innerHTML = 'Y: '+y;
+      document.getElementById('Z').innerHTML = 'Z: '+z;
+
+            }
+
+           window.addEventListener("devicemotion", handleMotionEvent, true);
+
+        }
+        
+ //   setInterval(handleMotionEvent(),1000);
+        
+    </script>
+        
+    </body>
+</html>
